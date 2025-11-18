@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+body {
+    background: #000;
+    color: #ddd;
+}
+
+.header {
+    padding: 20px 40px;
+    background: #0c0c0c;
+    border-bottom: 1px solid #900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav a {
+    color: #ddd;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    color: #e40000;
+}
+
+.logo {
+    background: #e40000;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: #0a0a0a;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #fff;
+}
+
+.hero h1 span {
+    color: #e40000;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 25px;
+    color: #ccc;
+}
+
+.btn {
+    background: #e40000;
+    color: #000;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #e40000;
+    margin-bottom: 15px;
+}
+
+.projects .project {
+    background: #0e0e0e;
+    border: 1px solid #900;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    background: #000;
+    border: 1px solid #900;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.contact button {
+    padding: 12px;
+    background: #e40000;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #0c0c0c;
+    border-top: 1px solid #900;
+    color: #777;
+}
