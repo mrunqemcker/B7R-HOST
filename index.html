@@ -1,85 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الموقع الشخصي — بـــــحـــر</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-    <header class="header">
-        <div class="logo">AD</div>
-        <nav>
-    
-            <a href="https://t.me/@JUST_B7R1" target="_blank">Telegram</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h1>مرحباً، أنا <span>بحر</span></h1>
-        <p>مطور ويب — صانع بوتات — مهتم بالبرمجة وتطوير الأنظمة.</p>
-
-        <!-- زر واتساب الحقيقي -->
-        <a href="https://wa.me/992201201706" class="btn" target="_blank">تواصل معي</a>
-    </section>
-
-    <section id="about" class="about container">
-        <h2>من أنا؟</h2>
-        <p>
-            أنا مطور متخصص في بناء البوتات باستخدام Node.js وتطوير مواقع ويب سريعة.
-            لدي خبرة في البنية الخلفية، التعامل مع APIs، وتصميم الأنظمة التفاعلية.
-        </p>
-    </section>
-
-    <section id="projects" class="projects container">
-        <h2>أعمالي</h2>
-
-        <div class="project">
-            <h3>بوت واتساب متعدد المهام</h3>
-            <p>نظام كامل لإدارة الجروبات، أوامر تلقائية، نظام حظر، ربط API.</p>
-        </div>
-
-        <div class="project">
-            <h3>موقع تعريفي احترافي</h3>
-            <p>موقع شركة واجهة أمامية بالكامل بأفضل معايير السرعة.</p>
-        </div>
-
-    </section>
-
-    <section id="contact" class="contact container">
-        <h2>تواصل معي</h2>
-
-        <form onsubmit="sendMessage(event)">
-            <input type="text" placeholder="اسمك" required />
-            <input type="email" placeholder="بريدك الإلكتروني" required />
-            <textarea placeholder="رسالتك" required></textarea>
-            <button type="submit">إرسال</button>
-        </form>
-    </section>
-
-    <footer class="footer">
-        © 2025 — بــــــــحـــــــر 🍷
-    </footer>
-
-
-    <!-- سكريبت إرسال الرسالة للواتساب الحقيقي -->
-    <script>
-    function sendMessage(e) {
-        e.preventDefault();
-        const name = document.querySelector("input[placeholder='اسمك']").value;
-        const email = document.querySelector("input[placeholder='بريدك الإلكتروني']").value;
-        const message = document.querySelector("textarea").value;
-
-        const text =
-            `اسم: ${name}%0A` +
-            `بريد: ${email}%0A` +
-            `رسالة: ${message}`;
-
-        window.open(`https://wa.me/201005812460?text=${text}`, "_blank");
-    }
-    </script>
-
-</body>
-</html>
